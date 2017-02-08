@@ -181,46 +181,46 @@ Let's try a bigger one. It even has two rooms!
 
 > You are in a small room. It has two doors, do you take the first?
 
-  ```javascript
-  var takeFirstDoor = confirm("You are in a small room. It has two doors, do you take the first?");
-  ```
+```javascript
+var takeFirstDoor = confirm("You are in a small room. It has two doors, do you take the first?");
+```
 
 > You take the first door. It's a nice room, with a comfy chair. Oh, it also
 > has some books in it. Want to take a closer look?
 
-  ```javascript
-  // takeFirstDoor == true
-  var lookAtBooks = confirm("You take the first door. It's a nice room, with a comfy chair."
-      + "\nOh, it also has some books in it.\n Want to take a closer look?");
-  ```
+```javascript
+// takeFirstDoor == true
+var lookAtBooks = confirm("You take the first door. It's a nice room, with a comfy chair."
+    + "\nOh, it also has some books in it.\n Want to take a closer look?");
+```
 
 > You take a closer look. There are three of them. The first has lots of signs
 > and triangles on it, the second has an eye on it and the third one has just
 > a circle one it.
 > Which one do you want to see? (triangles, eye or circle)
 
-  ```javascript
-  // lookAtBooks == true
-  var whichBook = prompt("You take a closer look. There are three of them."
-      + "\n\nThe first has lots of signs and triangles on it, the second"
-      + " has an eye on it and the third one has just a circle one it."
-      + "\n\n Which one do you want to see? (triangles, eye or circle)");
+```javascript
+// lookAtBooks == true
+var whichBook = prompt("You take a closer look. There are three of them."
+    + "\n\nThe first has lots of signs and triangles on it, the second"
+    + " has an eye on it and the third one has just a circle one it."
+    + "\n\n Which one do you want to see? (triangles, eye or circle)");
 
-  if (whichBook == "triangle") {
-      alert("Principia Mathematica, it says on the front."
-          + " You think of the mathematician from before and shudder.");
-      location = "https://en.wikipedia.org/wiki/Principia_Mathematica";
-  } else if (whichBook == "eye") {
-      alert("It's a book about cats, rejoice!");
-      location = "http://www.amazon.com/Cute-Cats-Around-World-pictures/dp/148189076X";
-  } else if (whichBook == "circle") {
-      alert("It's not a book at all, it's some kind of moving image in a frame...");
-      location = "https://www.youtube.com/watch?v=QncgmzH6yQU";
-  } else {
-      alert("That's not a book!");
-      location = "http://httpcats.herokuapp.com/404";
-  }
-    ```
+if (whichBook == "triangle") {
+    alert("Principia Mathematica, it says on the front."
+        + " You think of the mathematician from before and shudder.");
+    location = "https://en.wikipedia.org/wiki/Principia_Mathematica";
+} else if (whichBook == "eye") {
+    alert("It's a book about cats, rejoice!");
+    location = "http://www.amazon.com/Cute-Cats-Around-World-pictures/dp/148189076X";
+} else if (whichBook == "circle") {
+    alert("It's not a book at all, it's some kind of moving image in a frame...");
+    location = "https://www.youtube.com/watch?v=QncgmzH6yQU";
+} else {
+    alert("That's not a book!");
+    location = "http://httpcats.herokuapp.com/404";
+}
+  ```
 
 That was a lot of stuff, let's skip the rest. You can play the game
 [here](../examples/first-adventure.html)
